@@ -1,1 +1,12 @@
-@media (max-width:550px){html{font-size:14px}.todo-list__item{width:100%}.todo-list__item-text{width:100%;padding:0}}
+@media (max-width: 550px) {
+  html {
+    font-size: 14px;
+  }
+  .todo-list__item {
+    width: 100%;
+  }
+  .todo-list__item-text {
+    width: 100%;
+    padding: 0;
+  }
+}
