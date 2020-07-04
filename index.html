@@ -9,32 +9,30 @@
     <link rel='stylesheet' href='./css/style.css'>
     <link rel='stylesheet' href='./css/media.css'>
     <link rel='stylesheet' href='./css/libs/libs.css'>
-    <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+        <header class='header'>
+            <!-- <img src='./img/logo/logo.png' alt='logo' class='header__logo'> -->
+            <h1 class='header__title'>write your task</h1>
+        </header>
 
-    <header class='header'>
-        <img src='./img/logo/logo.png' alt='logo' class='header__logo'>
-        <h1 class='header__title'>TASKatka</h1>
-    </header>
+        <main class='main'>
+            <button class='show-form-btn'>show form</button>
+            <form action='' class='todo-form'>
+                <textarea class='todo-form__text-area' cols='30' rows='10' placeholder='write your notice'></textarea>
+                <div class='todo-form__buttons'>
+                    <button class='todo-form__button todo-form__save-btn'>save</button>
+                    <button class='todo-form__button todo-form__close-btn'>close</button>
+                </div>
+            </form>
+            <ul class='todo-list header__todo-list'></ul>
+        </main>
 
-    <main class='main'>
-        <div class='actions main__actions'>
-            <button class='show-form-btn'>+</button>
-        </div>
-        <form action='' class='todo-form'>
-            <textarea class='todo-form__text-area' cols='30' rows='10' placeholder='write your notice'></textarea>
-            <div class='todo-form__buttons'>
-                <button class='todo-form__save-btn'>save</button>
-                <button class='todo-form__close-btn'>close</button>
-            </div>
-        </form>
-        <ul class='todo-list header__todo-list'></ul>
-    </main>
-
-    <footer></footer>
-
+        <footer></footer>
+    </div>
     <script src='./js/main.js'></script>
 </body>
 

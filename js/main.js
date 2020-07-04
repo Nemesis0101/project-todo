@@ -5,13 +5,17 @@ let todoForm = document.querySelector('.todo-form');
 let todoList = document.querySelector('.todo-list');
 let todoTextArea = document.querySelector('.todo-form__text-area');
 
-
+let setBg = (e) => {
+    let randomBgColor = Math.floor(Math.random() * 16777215).toString(16);
+    e.style.backgroundColor = "#" + randomBgColor;
+}
 
 function showForm() {
 
     showFormBtn.addEventListener('click', () => {
         todoForm.classList.add('show-todo-form');
     });
+
 }
 showForm();
 
@@ -52,6 +56,8 @@ function addTodo(event) {
         saveToLS(todoTextArea.value);
 
         todoTextArea.value = '';
+
+        setBg(trashBtn);
     }
 }
 
@@ -114,6 +120,8 @@ function getTodos() {
         trashBtn.innerHTML = '<img src="./img/icons/cross.svg" alt="trash" class="todo-list__trash-btn-icon">';
         trashBtn.classList.add('todo-list__trash-btn');
         newTodo.appendChild(trashBtn);
+
+        setBg(trashBtn);
     });
 }
 
